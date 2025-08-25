@@ -1,15 +1,14 @@
 .btn {
   padding: 14px 40px;
   border-radius: 10px;
-  font-weight:700;
+  font-weight: 700;
 }
 
 .btn-green {
   border: 1px solid oklch(0.393 0.095 152.535);
-
   color: oklch(0.393 0.095 152.535);
 }
-
+   
 .btn-red {
   color: oklch(0.396 0.141 25.723);
   border: 1px solid oklch(0.396 0.141 25.723);
