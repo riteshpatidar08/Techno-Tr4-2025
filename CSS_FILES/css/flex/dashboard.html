@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        background-color: rgb(173, 171, 171);
+        height: 60px;
+        position: sticky;
+        top: 0;
+      }
+
+      .container {
+        display: flex;
+        border: 1px solid blue;
+        height: 200vh;
+      }
+
+      .sidebar {
+        background-color: lightgreen;
+        flex-basis: 300px;
+      }
+
+      .main_content {
+        background-color: lightskyblue;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <div class="container">
+      <div class="sidebar">Sidebar</div>
+      <div class="main_content">Main content</div>
+    </div>
+  </body>
+</html>
