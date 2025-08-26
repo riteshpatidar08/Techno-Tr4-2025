@@ -12,7 +12,8 @@
         }
         body {
             border : 2px solid red ;
-            height  : 100vh ;
+            height  : 200vh ;
+            
         }
         #para1{
             background-color: lightcyan;
@@ -27,17 +28,32 @@
         #para2{
             background-color: lightcoral;
             padding : 20px ;
-            position: absolute;
-         top : 100px
+          /*  position: absolute;
+         top : 100px */
         }
         #para3{
             background-color: lightgray;
             padding : 20px ;
         }
-        div {
+/*div {
             background-color: lightgreen;
             height: 200px;
             position: relative;
+        } */
+
+        #fixed {
+            background-color: lightcyan;
+            border : 2px dashed red ;
+            padding : 20px;
+            position: fixed;
+            bottom : 0;
+        }
+
+        #sticky {
+            background-color: lightgreen;
+            padding  : 20px;
+            position: sticky;
+            top : 0;
         }
     </style>
 </head>
@@ -47,5 +63,8 @@
    <p id="para2">PARA2 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, autem sint! Excepturi laboriosam nisi in, dolore nobis optio facilis aliquam, deserunt corporis impedit dolorum eaque odit possimus tenetur, blanditiis perspiciatis?</p>
 </div>
    <p id="para3">PARA 3 : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quisquam harum atque aut neque odio eligendi consectetur, impedit laudantium, temporibus dolorum corrupti aspernatur cupiditate, odit at nulla veniam ipsa vitae!</p>
+
+   <p id="fixed">🔒THIS ELEMENT WILL BE FIXED</p>
+   <p id="sticky">🔒THIS WILL STICK TO TOP</p>
 </body>
 </html>
