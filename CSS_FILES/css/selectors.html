@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* grouping selector */
+      #heading,
+      p {
+        color: red;
+      }
+      /* child selector */
+      nav > a {
+        color: blue;
+      }
+      /* descendent selector */
+      nav a {
+        color: red;
+      }
+      /* adjacent sibling selector */
+      h1 + p {
+        color: lightcoral;
+      }
+      /* general sibling selector */
+      h3 ~ p {
+        color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="heading">Heading</h3>
+    <p>para</p>
+
+    <nav>
+      <a href="">Home</a>
+      <div>
+        <a href="">About</a>
+      </div>
+    </nav>
+    <section>
+      <h1>heading 2</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus
+        sunt corporis suscipit illum perspiciatis sit excepturi nisi mollitia?
+        Et rem a placeat minima inventore ipsam eum saepe facere autem qui.
+      </p>
+    </section>
+
+    <section>
+      <h3>hello this is h3</h3>
+      <h1>tHIS IS H1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum qui
+        obcaecati iste, error reprehenderit pariatur ipsum aperiam odio deleniti
+        sit, porro quaerat id sed dolorum alias eligendi et quia? Pariatur!
+      </p>
+    </section>
+  </body>
+</html>
