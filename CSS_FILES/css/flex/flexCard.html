@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,7 +21,95 @@
         box-sizing: border-box;
         font-family: 'Geist', sans-serif;
       }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .card {
+        border:  1px solid oklch(0.556 0 0) ;
+        width : 350px ;
+        padding : 20px;
+      display: flex;
+      flex-direction: column;
+      gap : 20px;
+        border-radius: 28px;
+      }
+
+      .desc {
+        color  : oklch(0.556 0 0)
+      }
+      .group_text {
+        display: flex;
+        flex-direction: column;
+        gap : 6px
+      }
+      .avatar {
+        width : 50px
+      }
+      .intro {
+        display: flex;
+        gap : 10px;
+        align-items: center;
+      }
+
+      .profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .group_users{
+        display: flex;
+        flex-direction: column;
+        gap : 15px
+      }
     </style>
   </head>
-  <body></body>
+  <body>
+    <div class="card">
+        <!--group for text-->
+<div class="group_text">
+    <h4 class="heading">Team Members</h4>
+    <p class="desc">Invite your team members to collaborate.</p>
+</div>
+<!--group for multiple users -->
+<div class="group_users">
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/01.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/01.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/01.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+</div>
+    </div>
+  </body>
 </html>
