@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        width: 300px;
+        border: 1px solid red;
+        border-radius: 10px;
+        margin: 200px;
+        padding: 5px 10px;
+      }
+
+      input:focus {
+        outline: 1px solid red;
+        outline-offset: 1px;
+      }
+
+      input:required {
+        color: blueviolet;
+      }
+
+      h1:hover {
+        color: blue;
+        cursor: pointer;
+      }
+
+      button {
+        padding: 20px 60px;
+        border: 1px solid oklch(0.216 0.006 56.043);
+        background-color: oklch(0.923 0.003 48.717);
+        color: oklch(0.216 0.006 56.043);
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: transparent;
+      }
+
+      p:nth-child(odd) {
+        background-color: lightcoral;
+      }
+
+      p:nth-child(even) {
+        background-color: lightblue;
+      }
+
+      h2:first-child {
+        color: lightgreen;
+        font-size: 40px;
+      }
+
+      h2:last-child {
+        color: blue;
+      }
+      h4:first-of-type{
+        color : violet
+      }
+a {
+    font-size: 50px;
+}
+      a:active {
+        color : orange
+      }
+      a:visited{
+        color: olivedrab
+      }
+
+     
+   /*LVHA*/
+    </style>
+  </head>
+  <body>
+    <h1>Heading First</h1>
+    <button>Register</button>
+    <input type="text" />
+    <input type="text" required />
+
+    <div>
+      <p>lorem</p>
+      <p>lorem</p>
+      <p>lorem</p>
+      <p>lorem</p>
+      <p>lorem</p>
+    </div>
+
+    <div>
+      <h2>HEADING 2</h2>
+      <h2>HEADING 2</h2>
+      <h2>HEADING 2</h2>
+    </div>
+    <div>
+      <h2>HEADING 2</h2>
+      <h2>HEADING 2</h2>
+      <h2>HEADING 2</h2>
+    </div>
+
+    <div>
+        <p>hello</p>
+        <h4>heading four</h4>
+        <h4>heading four</h4>
+    </div>
+
+    <a href="">Google</a>
+  </body>
+</html>
