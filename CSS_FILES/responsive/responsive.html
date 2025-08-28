@@ -1,0 +1,451 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Geist', sans-serif;
+      }
+
+      body {
+       
+        height: 100vh;
+      }
+      .card {
+        border:  1px solid oklch(0.856 0 0) ;
+        width : 350px ;
+        padding : 20px;
+
+        border-radius: 28px;
+      }
+      .name {
+        font-weight: 600;
+      }
+
+      .mail {
+        color  : oklch(0.556 0 0);
+        font-size: 14px;
+      }
+
+    .group_text >  .desc {
+        color  : oklch(0.556 0 0)
+      }
+      .group_text {
+        display: flex;
+        flex-direction: column;
+        gap : 6px
+      }
+      .avatar {
+        width : 50px
+      }
+      .tag {
+        font-weight: 600;
+        
+      }
+      .intro {
+        display: flex;
+        gap : 10px;
+        align-items: center;
+      }
+
+      .profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .group_users{
+        display: flex;
+        flex-direction: column;
+        gap : 15px
+      }
+      .container {
+        display: grid;
+        padding  : 20px ;
+        gap : 20px;
+        grid-template-columns: repeat(4,1fr);
+      }
+
+      /* css for mobile */
+      @media (width < 480px){
+        .container {
+            grid-template-columns: 1fr;
+            padding :10px;
+            justify-content: center;
+        }
+        .card {
+            margin : 10px;
+        }
+      }
+
+      @media (min-width : 480px) and (max-width:768px){
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="card">
+        <!--group for text-->
+<div class="group_text">
+    <h4 class="heading">Team Members</h4>
+    <p class="desc">Invite your team members to collaborate.</p>
+</div>
+<!--group for multiple users -->
+<div class="group_users">
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/01.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/02.png" >
+      <div class="name_mail">
+        <p class="name">Jackson Lee</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/03.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Developer</div>
+  </div>
+</div>
+    </div>
+    <div class="card">
+        <!--group for text-->
+<div class="group_text">
+    <h4 class="heading">Team Members</h4>
+    <p class="desc">Invite your team members to collaborate.</p>
+</div>
+<!--group for multiple users -->
+<div class="group_users">
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/01.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/02.png" >
+      <div class="name_mail">
+        <p class="name">Jackson Lee</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/03.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Developer</div>
+  </div>
+</div>
+    </div>
+    <div class="card">
+        <!--group for text-->
+<div class="group_text">
+    <h4 class="heading">Team Members</h4>
+    <p class="desc">Invite your team members to collaborate.</p>
+</div>
+<!--group for multiple users -->
+<div class="group_users">
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/01.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/02.png" >
+      <div class="name_mail">
+        <p class="name">Jackson Lee</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/03.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Developer</div>
+  </div>
+</div>
+    </div>
+    <div class="card">
+        <!--group for text-->
+<div class="group_text">
+    <h4 class="heading">Team Members</h4>
+    <p class="desc">Invite your team members to collaborate.</p>
+</div>
+<!--group for multiple users -->
+<div class="group_users">
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/01.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/02.png" >
+      <div class="name_mail">
+        <p class="name">Jackson Lee</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/03.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Developer</div>
+  </div>
+</div>
+    </div>
+    <div class="card">
+        <!--group for text-->
+<div class="group_text">
+    <h4 class="heading">Team Members</h4>
+    <p class="desc">Invite your team members to collaborate.</p>
+</div>
+<!--group for multiple users -->
+<div class="group_users">
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/01.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/02.png" >
+      <div class="name_mail">
+        <p class="name">Jackson Lee</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/03.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Developer</div>
+  </div>
+</div>
+    </div>
+    <div class="card">
+        <!--group for text-->
+<div class="group_text">
+    <h4 class="heading">Team Members</h4>
+    <p class="desc">Invite your team members to collaborate.</p>
+</div>
+<!--group for multiple users -->
+<div class="group_users">
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/01.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/02.png" >
+      <div class="name_mail">
+        <p class="name">Jackson Lee</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/03.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Developer</div>
+  </div>
+</div>
+    </div>
+    <div class="card">
+        <!--group for text-->
+<div class="group_text">
+    <h4 class="heading">Team Members</h4>
+    <p class="desc">Invite your team members to collaborate.</p>
+</div>
+<!--group for multiple users -->
+<div class="group_users">
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/01.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/02.png" >
+      <div class="name_mail">
+        <p class="name">Jackson Lee</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/03.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Developer</div>
+  </div>
+</div>
+    </div>
+    <div class="card">
+        <!--group for text-->
+<div class="group_text">
+    <h4 class="heading">Team Members</h4>
+    <p class="desc">Invite your team members to collaborate.</p>
+</div>
+<!--group for multiple users -->
+<div class="group_users">
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/01.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/02.png" >
+      <div class="name_mail">
+        <p class="name">Jackson Lee</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Owner</div>
+  </div>
+  <div class="profile">
+    <div class="intro">
+      <!-- <div class="image"></div> -->
+      <img class="avatar" src="https://ui.shadcn.com/avatars/03.png" >
+      <div class="name_mail">
+        <p class="name">Sofia Davis</p>
+        <p class="mail">m@example.com</p>
+      </div>
+     </div>
+    <div class="tag">Developer</div>
+  </div>
+</div>
+    </div>
+</div>
+  </body>
+</html>
