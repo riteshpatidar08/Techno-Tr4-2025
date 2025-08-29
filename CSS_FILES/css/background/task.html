@@ -15,6 +15,7 @@
         box-sizing: border-box;
         font-family: 'Geist', sans-serif;
       }
+
       .hero {
         height: 800px;
         background-image: url('https://www.kainskep.com/blogs/team.jpg');
@@ -22,6 +23,7 @@
         justify-content: center;
         align-items: center;
         background-size: cover;
+        background-attachment: fixed;
         position: absolute;
         width: 100%;
         top: 0;
@@ -45,6 +47,18 @@
         font-weight: 700;
         color: white;
       }
+      a:hover {
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+        color: rgb(219, 219, 219);
+        text-decoration: underline;
+      }
+
+      h1:hover {
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+        color: rgb(219, 219, 219);
+      }
 
       h1 {
         color: white;
@@ -54,16 +68,39 @@
         width: 100%;
         position: absolute;
         top: 0;
-        background-color: rgba(0, 0, 0, 0.537);
+        background-color: rgba(0, 0, 0, 0.725);
       }
       .content {
         font-size: 50px;
         font-weight: 800;
-        color : white;
+        color: white;
         width: 900px;
+        animation-name: slide-in-left;
+animation-duration: 4s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
         position: relative;
         z-index: 1000;
       }
+      .content:hover {
+        cursor: pointer;
+        transform: scale(1.1) translateX(100px);
+        transition: all 0.8s ease-in;
+      }
+
+      @keyframes slide-in-left {
+        0% {
+            transform: translateX(-1000px) rotate(-702deg);
+            filter: blur(50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0) rotate(0);
+            filter: blur(0);
+            opacity : 1
+        }
+    }
     </style>
   </head>
   <body>
@@ -79,7 +116,7 @@
     <div class="hero">
       <div class="overlay"></div>
       <div class="content">
-        The best offers on the market for your business.
+        The best offers on the market.
       </div>
     </div>
   </body>
