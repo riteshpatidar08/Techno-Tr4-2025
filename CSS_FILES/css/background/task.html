@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <style>
-        * {
-            margin : 0 ;
-            padding : 0 ;
-            box-sizing: border-box;
-            font-family: 'Geist', sans-serif;
-        }
-        .hero {
-            height: 800px;
-             background-image: url('https://www.kainskep.com/blogs/team.jpg');
-             background-size: cover;
-             position: absolute;
-             width: 100%;
-             top:0 ;
-             z-index: -10;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Geist', sans-serif;
+      }
+      .hero {
+        height: 800px;
+        background-image: url('https://www.kainskep.com/blogs/team.jpg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: -10;
+      }
+      header {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
 
-        }
-        header {
-            padding : 10px ;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
+      nav {
+        display: flex;
+        gap: 20px;
+      }
 
-        nav {
-            display: flex;
-            gap : 20px;
-        }
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+      }
 
-        a {
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 700;
-            color : white
-        }
-
-        h1 {
-            color : white
-        }
+      h1 {
+        color: white;
+      }
+      .overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.537);
+      }
+      .content {
+        font-size: 50px;
+        font-weight: 800;
+        color : white;
+        width: 900px;
+        position: relative;
+        z-index: 1000;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Demo</h1>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Reference</a>
-            <a href="">Docs</a>
-            <a href="">About</a>
-        </nav>
+      <h1>Demo</h1>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Reference</a>
+        <a href="">Docs</a>
+        <a href="">About</a>
+      </nav>
     </header>
     <div class="hero">
-
+      <div class="overlay"></div>
+      <div class="content">
+        The best offers on the market for your business.
+      </div>
     </div>
-</body>
+  </body>
 </html>
