@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-
     <style>
+      body {
+        background-color: rgb(31, 31, 31);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        height: 150px;
+        width: 150px;
+        border-radius: 12px;
+        background: linear-gradient(
+          90deg,
+          rgb(30, 19, 235) 0%,
+          rgb(46, 46, 214) 0%,
+          rgba(2, 157, 219, 1) 83%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        animation-name: slide-in-left;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+      }
 
-        body {
-            background-color: rgb(31, 31, 31);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .container {
-            height: 150px;
-            width : 150px;
-            border-radius: 12px; 
-background: linear-gradient(90deg, rgb(30, 19, 235) 0%, rgb(46, 46, 214) 0%, rgba(2, 157, 219, 1) 83%, rgba(0, 212, 255, 1) 100%);
-animation-name: slide-in-left;
-animation-duration: 4s;
-animation-delay: 2s;
-animation-iteration-count: infinite;
+      @keyframes slide-in-left {
+        0% {
+          transform: translateX(-1000px) rotate(-702deg);
+          filter: blur(50px);
+          opacity: 0;
         }
 
-        @keyframes slide-in-left {
-            0% {
-                transform: translateX(-1000px) rotate(-702deg);
-                filter: blur(50px);
-                opacity: 0;
-            }
-
-            100% {
-                transform: translateX(0) rotate(0);
-                filter: blur(0);
-                opacity : 1
-            }
+        100% {
+          transform: translateX(0) rotate(0);
+          filter: blur(0);
+          opacity: 1;
         }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container"></div>
-</body>
+  </body>
 </html>
