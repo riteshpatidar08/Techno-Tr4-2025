@@ -75,14 +75,42 @@
         background-size: 74px 130px;
         height: 600px;
         margin: 200px 0;
+        position: relative;
      
       }
-
+.card__first {
+  width : 300px ;
+  height: 150px;
+  padding : 20px;
+  background-color: rgba(255, 255, 255, 0.762);
+  backdrop-filter: blur(13px);
+  position: absolute;
+  top : -40px;
+  left : 20px ;
+  border-radius: 4px;
+}
+.card__iconbox {
+  background-color: #458b5a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  height: 75px;
+  width: 75px;
+}
+.card__image {
+  width : 50px;
+}
     </style>
   </head>
   <body>
     <div class="pattern">
-    
+      <div class="card__first">
+ <div class="card__iconbox">
+  <img class="card__image" src="./dollar-circle-svgrepo-com (2).svg"
+ </div>
+      </div>
     </div>
   </body>
 </html>
