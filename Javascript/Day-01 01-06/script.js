@@ -137,3 +137,14 @@ console.log( typeof Boolean(isJsFun)) //NOTE explicit  converting the data type 
 //NOTE TYPE COERSION self js (implicit);
 //NOTE converting string into number without using any inbuilt functions using type-coersion 
 console.log(+'4');
+
+//NOTE SENTENCE USING VARIABLES:
+
+let name = 'test';
+let ag = 25 ;
+
+// console.log('MY name is' + ' '  +  name + ' ' + 'age is' + ' ' + ag) ❌  ;
+
+
+//NOTE TEMPLATE STRING AND STRING INTERPOLATION;
+console.log(`My name is ${name}`) ;
