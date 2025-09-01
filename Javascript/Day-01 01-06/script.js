@@ -71,3 +71,56 @@ console.log(typeof company);
 
 let student = null;
 console.log(typeof student); //TODO  null datatype always be object
+
+
+//NOTE OPERATORS 
+
+//NOTE AIRTHMATIC OPERATORS(+,-,*,/,%, **) ;
+console.log(5 + 5) ;
+console.log(5 - 5) ;
+console.log(5 % 5) ;
+console.log(5 / 5) ;
+console.log(5 * 5) ;
+console.log(5 ** 5) ;
+
+console.log('5' + 5 - 3) //55 string ;
+console.log('5' - 5) ;
+
+//NOTE ASSIGNMENT OPERATORS (= , += , -= , /= , *=) ;
+let y = 5 ;
+//NOTE y = y + 5 ;
+//NOTE y ki value main 5 add krdo and y main assign kardo
+y += 5 ;
+
+//NOTE COMPARASION (== , === , !=, !== , > , >= , < , <=) ;
+//NOTE (== ) LOOSE EQUALITY CHECK (VALUE)
+console.log(5 == '5') ;
+
+//NOTE (===) STRICT EQUALITY CHECK ( VALUE AND TYPE )
+console.log(5 === '5') ;
+
+//NOTE (!= ,!==)
+console.log(10 != '10') ;
+console.log(10 !== '10');
+//NOTE LOGICAL (|| , && , !) 
+console.log(true || false)
+console.log(true && false);
+console.log(!true) ;
+
+// console.log(0 && 6);
+
+//NOTE unary (++ , --  ,!);
+
+//pre increment and post increment ;
+
+//POST 
+let j = 5 ;
+console.log(j++)
+console.log(j)
+
+//pre 
+let k = 6 ;
+console.log(++k)
+
+let z = 12 ;
+console.log(z++ + ++z) ;
