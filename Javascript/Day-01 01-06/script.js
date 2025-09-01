@@ -124,3 +124,16 @@ console.log(++k)
 
 let z = 12 ;
 console.log(z++ + ++z) ;
+
+
+//NOTE TYPE CONVERSION AND TYPE COERSION ;
+
+//NOTE EXPLICIT AND IMPLICIT :
+const isjsFun = 'true' ;
+console.log( typeof Boolean(isJsFun)) //NOTE explicit  converting the data type of a variable using inbuilt functions (TYPE CONVERSION).
+//NOTE  String , Number 
+
+
+//NOTE TYPE COERSION self js (implicit);
+//NOTE converting string into number without using any inbuilt functions using type-coersion 
+console.log(+'4');
