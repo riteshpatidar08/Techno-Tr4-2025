@@ -44,9 +44,9 @@ if (null) {
   console.log('this will run or not');
 }
 
-//NOTE if user exists and isLoggedIn show dashboard other wise show login.
+//TODO if user exists and isLoggedIn show dashboard other wise show login.
 
-//NOTE create a nested if else first check if user is active then check the permission parameter equal to ='update_student_records' .
+//TODO create a nested if else first check if user is active then check the permission parameter equal to ='update_student_records' .
 
 //nested if else
 
@@ -85,11 +85,10 @@ false
 const action = 'Logout';
 switch (action) {
   case 'Login':
-    console.log('user is logging in');
+  case 'LogOut':
+    console.log('user is logging in and logging out');
     break;
-  case 'Logout':
-    console.log('user is signing out');
-    break;
+
   case 'FileAccess':
     console.log('user is accessing the file');
     break;
@@ -97,4 +96,44 @@ switch (action) {
     console.log('no action is matched');
 }
 
-//create a switch case takes cmd as a paramter create cases on the basis of ls , mkdir , cd , touch 
+//TODO create a switch case takes cmd as a paramter create cases on the basis of ls , mkdir , cd , touch
+
+//TODO if user action is increment then increase count++ if decrement decrease count--
+
+//country //state //city;
+
+//NON PRIMITIVE DATA TYPES : 
+
+//NOTE ARRAY AND OBJECT***** ;
+const sum2 = (a,b) => a + b
+const jsArray = ['test' , 3 , true , undefined , null , sum2];
+
+console.log(jsArray[0]);
+console.log(jsArray.length);
+console.log(typeof jsArray) //object
+console.log(jsArray[jsArray.length-1]);
+//updating any element ;
+jsArray[0] = 'test2' ;
+
+//OBJECT***** ;
+
+const details = {
+ firstName : 'test' ,
+ age  : 20 ,
+ friends : ['test1','test2'],
+ address : {
+    pincode : 302018,
+    city : 'jaipur'
+ }
+}
+
+// [{},{},{}]
+//NOTE ACCESSING VALUES ;
+//NOTE DOT NOTATION , BRACKET NOTATION
+
+console.log(details.firstName)
+console.log(details.address.city)
+console.log(details.friends[details.friends.length - 1])
+details.firstName = 'newtest';
+details.courses = 'CSE';
+console.log(details)
