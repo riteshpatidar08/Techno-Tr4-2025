@@ -136,4 +136,15 @@ console.log(details.address.city)
 console.log(details.friends[details.friends.length - 1])
 details.firstName = 'newtest';
 details.courses = 'CSE';
-console.log(details)
+console.log(details);
+
+//NOTE BRACKET NOTATION : DYNAMICALLY ACCESS THE VALUE;
+const a = 'age' ;
+console.log(details[a])
+// console.log(details.a)
+
+const product = {
+    name  : 'AC' ,
+    price : 400000 ,
+}
+//create a fn to checkExistingProperty(propertyName,object);

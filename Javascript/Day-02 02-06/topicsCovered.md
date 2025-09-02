@@ -1,0 +1,10 @@
+DATE = 2/09/25 --------------------------------------
+
+FUNTIONS INTRO
+INTERACTION FUNCTION PROMPT , CONFIRM , ALERT
+IF, ELSE  , TERNARY OPERATOR 
+SWITCH CASE ,
+NON PRIMITVE INTRO => ARRAY AND OBJECT
+
+
+DATE = 2/09/25 --------------------------------------
