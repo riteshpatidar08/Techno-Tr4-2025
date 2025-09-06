@@ -195,8 +195,10 @@ const introarr = ['my', 'name', 'is', 'test'];
 //NOTE  create a string in which you have to capatilize first character of each Element;
 //NOTE 'hello this is a string' reverse each of word of the string
 const strg = 'hello this is a string';
-
 const reversedEachWord = strg.split(' ').map((el) => {
   return el.split('').reverse().join('');
 });
 console.log(reversedEachWord.join(' '));
+
+//NOTE INCLUDES 
+
