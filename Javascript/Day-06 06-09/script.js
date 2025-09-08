@@ -166,4 +166,15 @@ console.log(Math.max(1,2,3,4,5))
 // random number 1 to 10
 console.log(Math.floor((Math.random()*10) + 1));
 console.log(Math.sqrt(25))
-console.log(Math.pow(2,4))
+console.log(Math.pow(2,4));
+
+//OBJECT :
+const colors = {
+    white : '#fff',
+    black : '#000'
+}
+const keyOutput = Object.keys(colors) //[white,black]
+console.log(keyOutput);
+ 
+//OBject.values //['#fff','#000'];
+console.log(Object.values(colors))
