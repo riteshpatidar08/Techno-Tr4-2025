@@ -83,19 +83,56 @@ sum([1, 2]);
 
 //Spread Operator (...) *****
 
-const products = ['tv','ac','mobile'
-]
-console.log(...products) ;
+const products = ['tv', 'ac', 'mobile'];
+console.log(...products);
 
 //SHALLOW COPY :
-const copyProduct = products; 
-console.log(copyProduct)
-copyProduct[0] = 'Laptop'
-console.log(copyProduct)
-console.log(products)
+const copyProduct = products;
+console.log(copyProduct);
+copyProduct[0] = 'Laptop';
+console.log(copyProduct);
+console.log(products);
 //shallow copy
 const copyCreateUsingSpread = [...products];
-console.log(copyCreateUsingSpread)
+console.log(copyCreateUsingSpread);
 copyCreateUsingSpread[0] = 'pc';
 console.log(products);
-console.log(copyCreateUsingSpread)
+console.log(copyCreateUsingSpread);
+
+//nested copy donot create using spread ;
+const evenNumber = [2, 4, [6, 8]];
+const evNumber = [...evenNumber];
+evNumber[2][0] = 100;
+console.log(evNumber);
+console.log(evenNumber);
+
+
+//NOTE MERGE TWO ARRAY ;
+
+const frontend = [
+    'HTML' , 'CSS'
+]
+const backend = [
+    'node' , 'express'
+]
+
+const mernStack = [...frontend , ...backend]
+
+//NOTE  useCASE 3 - INSERTION OF THE VALUES IN THE START OR END ;
+const newFrontned = ['Figma', ...frontend  , 'JS'];
+console.log(newFrontned)
+
+//try all this cases for object also
+//NOTE Copy an object
+const obj1 = {
+    name : 'test'
+}
+
+const obj2 = {...obj1};
+//NOTE Merge two 
+
+// const mergeObj = {...obj , ...obj2}
+
+  //Points to remember while merging if both object have same property the later overwrite earlier one
+
+//NOTE adding new and update existing one *****
