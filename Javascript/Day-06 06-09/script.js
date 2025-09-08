@@ -80,3 +80,22 @@ function sum([a, b]) {
 }
 
 sum([1, 2]);
+
+//Spread Operator (...) *****
+
+const products = ['tv','ac','mobile'
+]
+console.log(...products) ;
+
+//SHALLOW COPY :
+const copyProduct = products; 
+console.log(copyProduct)
+copyProduct[0] = 'Laptop'
+console.log(copyProduct)
+console.log(products)
+//shallow copy
+const copyCreateUsingSpread = [...products];
+console.log(copyCreateUsingSpread)
+copyCreateUsingSpread[0] = 'pc';
+console.log(products);
+console.log(copyCreateUsingSpread)
