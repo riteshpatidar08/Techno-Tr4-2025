@@ -43,8 +43,18 @@ const {
 console.log(fName, city);
 
 const userData = [
-  { id: 1, name: 'test1', email: 'test1@gmail.com', roles: ['admin', 'editor'] },
-  { id: 2, name: 'test2', email: 'test2@gmail.com', roles: ['student', 'admin'] },
+  {
+    id: 1,
+    name: 'test1',
+    email: 'test1@gmail.com',
+    roles: ['admin', 'editor'],
+  },
+  {
+    id: 2,
+    name: 'test2',
+    email: 'test2@gmail.com',
+    roles: ['student', 'admin'],
+  },
   {
     id: 3,
     name: 'test3',
@@ -52,3 +62,21 @@ const userData = [
     roles: ['admin', 'superadmin'],
   },
 ];
+userData.forEach(({ email, roles: [role1, role2] }) => {
+  console.log(email, role1, role2);
+  // console.log(el) //individual object
+  // const {email ,roles} = el ;
+  // console.log(email,roles)
+  // const [role1,role2] = roles //array for roles ;
+  // console.log(role1,role2)
+});
+
+//destruturing //email , role1, role2
+
+//NOTE HOW TO USE PARAMTER DESTRUCTURING IN FUNCTION ;
+
+function sum([a, b]) {
+  console.log(a + b);
+}
+
+sum([1, 2]);
