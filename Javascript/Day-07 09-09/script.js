@@ -144,7 +144,38 @@ function multiply(){
     console.log('multiply function is running')
 }
 
-console.log(college) //access tdz start
+// console.log(college) //access tdz start
 let college ='techno' //assigning a value tdz end
 
 //note diffrenece between let const and var => reassig and redeclaration , scope basis , on hoisting basis
+
+
+var z = 10 ;
+function demo(){
+    console.log(z); //hoisting var = undefined
+    var z = 20 ;
+    console.log(z) //20
+}
+
+demo()
+
+//DOM MANIPULATION :
+
+//DOM TREE => DOCUMENT //NOTE select
+
+console.log(document) //root node of dom tree
+console.dir(document) //show all the properties of js object
+console.log(document.body);
+
+//NOTE SELECT;
+//NOTE 5 methods
+
+//document.getElementByTagName() ;
+//return a htmlcollection which looks like an array but originally not an array ;
+const allh1 = document.getElementsByTagName('h1');
+console.log(allh1[1])
+console.log(allh1[0])
+console.log(allh1)
+//NOTE convert html collection in to an array ;
+const newArr = [...allh1] ;
+console.log(newArr)
