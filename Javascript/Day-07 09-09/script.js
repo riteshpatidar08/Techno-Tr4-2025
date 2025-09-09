@@ -63,7 +63,7 @@ if(true){
 }
 
 console.log(c)
-
+//function create its own local scope all the variable declaration cannot be accessed outside of the scope
 function greet(){
     const x =1;
     let y =2 ;
@@ -71,4 +71,59 @@ function greet(){
 }
 
 greet();
-console.log(z)
+// console.log(z)
+
+//NOTE Variable Shadowing
+const sayYourName = 'my name is test' ;
+
+function greet1(){
+    const sayYourName  = 'my name is test1'
+    console.log(sayYourName)
+}
+greet1()
+
+
+
+//WINDOW OBJECT (GLOBAL OBJECT) ;
+
+console.log(window) ;
+// window.alert('hi');
+const car = { 
+    brand : "HONDA"
+}
+//NOTE why var is called a global variable 
+//the variables decalared with var automatically craete key value pair in the window
+var product  = 'AC' ;
+console.log(window);
+let even = 2 ;
+console.log(window.even); //gives undefined
+console.log(window.product);//gives 'AC'
+
+
+//NOTE THIS KEYWORD :
+//global scope this behaviour
+console.log(this.product); //ac ; //points to window
+
+//function decalaration use case behaviour
+function sum(){
+    console.log(this) //points to window
+}
+sum()
+
+//this object 
+
+//methods :
+
+const carDetails = {
+    brand : "HONDA",
+    color : "WHITE",
+    getDetails : function(){
+        console.log(this.color)  //points to object itself
+    }
+    // getDetails : ()=>{
+    //     console.log(this)//use lexical scope this  
+    // }❌❌
+}
+carDetails.getDetails()
+//note arrow function donot have its own this keyword its uses parent scope this (Or lexical scope this)
+//donot use arrow function as object method
