@@ -127,3 +127,24 @@ const carDetails = {
 carDetails.getDetails()
 //note arrow function donot have its own this keyword its uses parent scope this (Or lexical scope this)
 //donot use arrow function as object method
+
+
+
+//NOTE HOISTING => moves the variables and function declarations to the top of scope ; 
+
+//var keyword :
+console.log(gadget) //undefined
+
+var gadget  = 'PS4' ;
+// console.log(gadget)
+// console.log(window)
+
+multiply() //support hoisting initial value will be function iteself
+function multiply(){
+    console.log('multiply function is running')
+}
+
+console.log(college) //access tdz start
+let college ='techno' //assigning a value tdz end
+
+//note diffrenece between let const and var => reassig and redeclaration , scope basis , on hoisting basis
