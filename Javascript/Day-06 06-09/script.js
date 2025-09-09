@@ -92,6 +92,8 @@ console.log(copyProduct);
 copyProduct[0] = 'Laptop';
 console.log(copyProduct);
 console.log(products);
+
+
 //shallow copy
 const copyCreateUsingSpread = [...products];
 console.log(copyCreateUsingSpread);
@@ -133,48 +135,46 @@ const obj2 = { ...obj1 };
 //NOTE adding new and update existing one *****
 
 const laptop = {
-    name : "Lenovo x1 yoga",
-    ram : '32gb'
-}
-const updatedLaptop = {...laptop , ram : '16gb'};
-console.log(updatedLaptop)
+  name: 'Lenovo x1 yoga',
+  ram: '32gb',
+};
+const updatedLaptop = { ...laptop, ram: '16gb' };
+console.log(updatedLaptop);
 
 //NOTE REST OPERTOR(...) ;
-//rest operator packs the remaining values into an arry
-const oddNumber = [1,3,5,7];
-const [z, ...rest] = oddNumber ;
-console.log(z,rest)
-
+//NOTE rest operator packs the remaining values into an arry
+const oddNumber = [1, 3, 5, 7];
+const [z, ...rest] = oddNumber;
+console.log(z, rest);
 
 //NOTE REST PARAMETER :
-function sum(a, ...rest){
-    console.log(a,rest);
+function sum(a, ...rest) {
+  console.log(a, rest);
 }
-sum(1,2,3,4,5);
-
+sum(1, 2, 3, 4, 5);
 
 //NOTE MATH OBJECT :
 
-console.log(Math.round(2.6));//round to the nearest integer
+console.log(Math.round(2.6)); //round to the nearest integer
 console.log(Math.trunc(-2.7)); //remove decimal values
-console.log(Math.floor(-2.9)) ; //round off to the lower value
-console.log(Math.ceil(5.1)) //round ooff to the upper value
-console.log(Math.min(1,2,3,4))
-console.log(Math.max(1,2,3,4,5))
+console.log(Math.floor(-2.9)); //round off to the lower value
+console.log(Math.ceil(5.1)); //round ooff to the upper value
+console.log(Math.min(1, 2, 3, 4));
+console.log(Math.max(1, 2, 3, 4, 5));
 // const arr = [1,3,4,6,5,7,];
 // console.log(Math.max(...arr))
 // random number 1 to 10
-console.log(Math.floor((Math.random()*10) + 1));
-console.log(Math.sqrt(25))
-console.log(Math.pow(2,4));
+console.log(Math.floor(Math.random() * 10 + 1));
+console.log(Math.sqrt(25));
+console.log(Math.pow(2, 4));
 
-//OBJECT :
+//NOTE OBJECT :
 const colors = {
-    white : '#fff',
-    black : '#000'
-}
-const keyOutput = Object.keys(colors) //[white,black]
+  white: '#fff',
+  black: '#000',
+};
+const keyOutput = Object.keys(colors); //[white,black]
 console.log(keyOutput);
- 
+
 //OBject.values //['#fff','#000'];
-console.log(Object.values(colors))
+console.log(Object.values(colors));
