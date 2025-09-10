@@ -99,3 +99,6 @@ const li = document.createElement('li');
 const referenecLi = document.getElementById('item_2');
 li.textContent = 'new added list item';
 list.insertBefore(li, referenecLi);
+
+li.remove(); //the element which you have to delete directly select the element an call the remove method.
+list.removeChild(referenecLi); //remove child inside parent

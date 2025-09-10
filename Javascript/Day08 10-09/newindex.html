@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn" onclick="btnClick()">Change Color</button>
+
+    <button id="login_btn">Login</button>
+
+    <script>
+      function btnClick() {
+        console.log('click event triggers');
+        document.body.style.backgroundColor = 'red';
+      }
+      //note we donot prefer to use inline event in the js
+      const btn = document.getElementById('btn');
+      console.dir(btn);
+      console.log(btn.onclick);
+      btn.onclick = function () {
+        console.log('hi this event is running....');
+      };
+      //onclick , ondblclick , onmouseenter, onmouseleave
+
+      const loginBtn = document.getElementById('login_btn');
+      loginBtn.addEventListener('click', function () {
+        console.log('login successfull');
+      });
+
+      loginBtn.addEventListener('click', function () {
+        console.log('login failed');
+      });
+    </script>
+  </body>
+</html>
