@@ -1,0 +1,44 @@
+//form events ;
+
+//focus //blur //submit //input //change
+
+const firstname = document.getElementById('firstname');
+
+firstname.addEventListener('focus', () => {
+  firstname.style.border = '2px solid red';
+  firstname.style.outline = 'none';
+});
+
+firstname.addEventListener('blur', () => {
+  firstname.style.border = '2px solid gray';
+  firstname.setAttribute('disabled', '');
+  firstname.setAttribute('placeholder', 'field disbaled');
+});
+
+firstname.addEventListener('input', (event) => {
+  console.log(event.target.value);
+  console.log(firstname.value); //first way to fetch values in input event
+  const p = document.getElementById('output');
+  p.textContent = firstname.value;
+});
+
+//create a password input field if the password length is less than 8 show password must be 8 character long below the input field in red color , if password is equal and greater than 8 show strong password with green color ;
+
+///NOTE SELECT THE PASSWORD FIELD
+const pass = document.getElementById('password');
+console.log(pass);
+
+pass.addEventListener('input', () => {
+  const p = document.getElementById('output');
+  if (pass.value.length < 8) {
+    p.textContent = 'password must be 8 character long';
+    p.className = 'error';
+    pass.style.border = '2px solid red';
+    pass.style.outline = 'none';
+  } else {
+    p.textContent = 'strong password';
+    p.className = 'success';
+    pass.style.border = '2px solid green';
+    pass.style.outline = 'none';
+  }
+});

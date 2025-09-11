@@ -7,9 +7,7 @@
   </head>
   <body>
     <button id="btn" onclick="btnClick()">Change Color</button>
-
     <button id="login_btn">Login</button>
-
     <script>
       function btnClick() {
         console.log('click event triggers');
@@ -25,6 +23,7 @@
       //onclick , ondblclick , onmouseenter, onmouseleave
 
       const loginBtn = document.getElementById('login_btn');
+
       loginBtn.addEventListener('click', function () {
         console.log('login successfull');
       });
@@ -32,6 +31,8 @@
       loginBtn.addEventListener('click', function () {
         console.log('login failed');
       });
+
+      //NOTE task  -  CREATE A TABLE USING  JS ;
     </script>
   </body>
 </html>
