@@ -63,6 +63,26 @@ setTimeout(() => {
 console.log('4');
 console.log('5');
 
-setInterval(() => {
-  console.log('hello ');
+const intervalId = setInterval(() => {
+  console.log('hello ', Math.random());
 }, 2000);
+
+clearInterval(intervalId); //clear time interval
+
+//PROMISES => PROMISE IS A JS OBJECT WHICH IS A PLACEHOLDER FOR FUTURE VALUES OF SOME ASYNC CODE LIKE DATA FETCHING :
+
+//promise states => pending , reject and fulfilled ;
+
+//how to create a promise in js ;
+//how to handle the promise object return by inbuilt functions like fetch()
+
+//note 1 :
+const newPromise = new Promise((resolve, reject) => {
+  let success;
+  if (success) {
+    resolve('promise is fulfilled');
+  } else {
+    reject('promise is rejected');
+  }
+});
+console.log(newPromise);
