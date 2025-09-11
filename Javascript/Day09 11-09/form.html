@@ -19,7 +19,7 @@
       const email = document.getElementById('email');
 
       form.addEventListener('submit', (event) => {
-        event.preventDefault();
+        event.preventDefault(); //this method is used to stop the refreshing behivour of the form during submission
         console.log(email.value);
         console.log(name.value);
         const data = {
@@ -27,6 +27,11 @@
           email: email.value,
         };
         console.log(data);
+      });
+
+      document.body.addEventListener('keyup', (event) => {
+        console.log(event);//get information which key is pressed
+        console.log('key press');
       });
     </script>
   </body>

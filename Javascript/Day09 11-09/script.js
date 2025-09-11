@@ -45,7 +45,24 @@ pass.addEventListener('input', () => {
 
 //next submit event imp*****
 
+// console.log('1')
+// console.log('2')
+// alert('hi')
+// console.log('4'
+// )
+// console.log('5')
 
+console.log('1');
+console.log('2');
+setTimeout(() => {
+  console.log('3');
+}, 2000); //callback ,time
+setTimeout(() => {
+  console.log('6');
+}, 2000);
+console.log('4');
+console.log('5');
 
-
-
+setInterval(() => {
+  console.log('hello ');
+}, 2000);
