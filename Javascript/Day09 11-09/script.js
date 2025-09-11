@@ -97,6 +97,18 @@ newPromise
   .then((data) => console.log(data))
   .catch((err) => {
     console.log(err);
-  }).finally(()=>{
-    console.log('this will run for fulfilled and also for reject')
   })
+  .finally(() => {
+    console.log('this will run for fulfilled and also for reject');
+  });
+
+fetch('https://jsonplaceholder.typicode.com/todos')
+  .then((res) => res.json())
+  .then((data) =>{
+    data.forEach((el)=>{
+     const h1 = document.createElement('h1');
+     h1.textContent = el.title 
+     document.body.appendChild(h1)
+    })
+  })
+
