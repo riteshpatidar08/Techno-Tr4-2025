@@ -76,7 +76,7 @@ clearInterval(intervalId); //clear time interval
 //how to create a promise in js ;
 //how to handle the promise object return by inbuilt functions like fetch()
 
-//note 1 :
+//STEP 1 - CREATING PROMISES :
 const newPromise = new Promise((resolve, reject) => {
   let success;
   if (success) {
@@ -86,3 +86,17 @@ const newPromise = new Promise((resolve, reject) => {
   }
 });
 console.log(newPromise);
+
+//Step - 2  HANDLING THE PROMISES STATES :
+
+//then => if promise is fulfilled it will handle the data ,
+//catch => if promise is reject then it will handle the err ,
+//finally => run in both cases
+
+newPromise
+  .then((data) => console.log(data))
+  .catch((err) => {
+    console.log(err);
+  }).finally(()=>{
+    console.log('this will run for fulfilled and also for reject')
+  })
