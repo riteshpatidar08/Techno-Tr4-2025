@@ -51,9 +51,18 @@ function Student(name, age, department) {
   this.age = age;
   this.department = department;
 }
+//every object in the js have a prototype property where we can save the properties and methods and share all across the instances .
+Student.prototype.intro = function () {
+  console.log(`my name is ${this.name}`);
+};
 
 const rahul = new Student('rahul', 20, 'CSE');
+rahul.intro();
+const ram = new Student('ram', 20, 'CSE');
+// rahul.intro();
+// ram.intro();
 console.log(rahul);
+console.log(ram);
 
 //new keyword role :
 //empty object {}
@@ -92,3 +101,24 @@ function generateObj(a, b, c) {
 }
 console.log(generateObj(1, 2, 3));
 console.log(generateObj(4, 5, 6));
+
+console.log([1, 2, 3, 4]);
+console.log([3, 4, 5]);
+
+
+
+//NOTE ACCESSING hidden [[PROTOTYPE]] property of an object using __proto__ ;
+
+const detail = {
+    firstName : 'ritesh'
+}
+console.log(detail)
+console.log(detail.__proto__);
+
+const obj2 = {
+    age : 25 ,
+    __proto__ : detail
+}
+
+    console.log(obj2)
+    console.log(obj2.firstName)
