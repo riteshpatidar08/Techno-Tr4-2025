@@ -51,7 +51,7 @@ function Student(name, age, department) {
   this.age = age;
   this.department = department;
 }
-//every object in the js have a prototype property where we can save the properties and methods and share all across the instances .
+//NOTE every object in the js have a prototype property where we can save the properties and methods and share all across the instances .
 Student.prototype.intro = function () {
   console.log(`my name is ${this.name}`);
 };
@@ -124,10 +124,15 @@ console.log(obj2.firstName);
 const arr = new Array(1, 2, 3, 4);
 console.log(arr);
 
-//setting new methods oon the aray prototype ;
+//NOTE setting new methods oon the aray prototype ;
 Array.prototype.hi = function () {
   console.log('hi');
 };
 
 const newarr = new Array('a');
 newarr.hi();
+
+
+//NOTE https://www.jsv9000.app/ js code execution environment
+
+//NOTE http://latentflip.com/loupe/?code=!!! js code execution environment
