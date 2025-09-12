@@ -112,3 +112,6 @@ fetch('https://jsonplaceholder.typicode.com/todos')
     })
   })
 
+
+
+// http://www.omdbapi.com/?s=batman&apikey=b0eec689
