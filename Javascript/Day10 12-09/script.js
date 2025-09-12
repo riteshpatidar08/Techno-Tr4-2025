@@ -105,20 +105,29 @@ console.log(generateObj(4, 5, 6));
 console.log([1, 2, 3, 4]);
 console.log([3, 4, 5]);
 
-
-
 //NOTE ACCESSING hidden [[PROTOTYPE]] property of an object using __proto__ ;
 
 const detail = {
-    firstName : 'ritesh'
-}
-console.log(detail)
+  firstName: 'ritesh',
+};
+console.log(detail);
 console.log(detail.__proto__);
 
 const obj2 = {
-    age : 25 ,
-    __proto__ : detail
-}
+  age: 25,
+  __proto__: detail,
+};
 
-    console.log(obj2)
-    console.log(obj2.firstName)
+console.log(obj2);
+console.log(obj2.firstName);
+
+const arr = new Array(1, 2, 3, 4);
+console.log(arr);
+
+//setting new methods oon the aray prototype ;
+Array.prototype.hi = function () {
+  console.log('hi');
+};
+
+const newarr = new Array('a');
+newarr.hi();
