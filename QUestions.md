@@ -1,11 +1,14 @@
 what is prototype in js ?
 prototype chaining ?
 call stack ?
+scope chaining , closures //pending cover tomorrow 
 event loop ?
 callback queue ?
 microstask queue ?
 promises ?
 promises states ?
+asynchronous js ?
+how js handle the async code if js is synchronous ?
 how to handle errors in the promises ?
 diffrenece between async await and .then ?
 lexical scope ?
