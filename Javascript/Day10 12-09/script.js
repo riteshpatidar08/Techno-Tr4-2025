@@ -42,20 +42,53 @@ setTimeout(() => {
   console.log('timer');
 }, 0);
 
-
 //NOTE CONSTRUCTOR FUNCTION :
 //we call constructor function using new keyword which is used to create a object instance using parameter ;
 
-function Student(name , age, department){
-    console.log(this)
-    this.name = name ;
-    this.age = age ;
-    this.department = department;
+function Student(name, age, department) {
+  console.log(this);
+  this.name = name;
+  this.age = age;
+  this.department = department;
 }
 
-const rahul = new Student('rahul', 20 , 'CSE');
-console.log(rahul)
+const rahul = new Student('rahul', 20, 'CSE');
+console.log(rahul);
 
-//new keyword role : 
+//new keyword role :
 //empty object {}
 //this keyword set on this empty {} ;
+
+const a = 4;
+const b = 6;
+const c = 7;
+
+function printVariables(a, b, c) {
+  console.log(a, b, c);
+}
+
+printVariables(a, b, c);
+
+const obj = {
+  a: 3,
+  b: 6,
+  c: 7,
+  getVariables: function () {
+    console.log(this.a, this.b, this.c);
+  },
+};
+
+//factory function
+
+function generateObj(a, b, c) {
+  return {
+    a: a,
+    b: b,
+    c: c,
+    getVariables: function () {
+      console.log(this.a, this.b, this.c);
+    },
+  };
+}
+console.log(generateObj(1, 2, 3));
+console.log(generateObj(4, 5, 6));
