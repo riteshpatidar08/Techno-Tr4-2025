@@ -55,3 +55,35 @@ Jonas.getId
 
 //NOTE how to access the private field outside of the class and modify 
 // getters and setters //keyword get and set
+
+
+//NOTE INHERITANCE 
+
+
+class Parent{
+    constructor(name){
+        this.name = name ;
+    }
+  
+    getDetails(){
+        console.log(`my name is ${this.name}`) 
+    }
+
+}
+
+class Child extends Parent {
+    constructor(age){
+        super('TEST') //super keyword calls the parent constructor with the required argument
+        this.age = age
+    }
+    getDetails(){
+        console.log(`this is child one`) 
+    }
+}
+
+const newChildInstance = new Child(34);
+console.log(newChildInstance)
+newChildInstance.getDetails()
+
+
+//NOTE create a movie class create a method like add movie , get movies , searchmovies and deletemovies
