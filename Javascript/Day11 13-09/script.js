@@ -118,4 +118,22 @@ class Gadget{
 }
 
 const ps5 = new Gadget('ps5')
-Gadget.getGadgetDetails()
+Gadget.getGadgetDetails();
+
+//FUNCTION METHODS CALL APPLY BIND :
+const accoutDetails = {
+    firstName : "TEST"
+}
+const newDetails = {
+    firstName : "RAM"
+}
+function demo(id){
+    console.log(`this is a demo account for ${this.firstName} with id ${id}`)
+}
+//call
+demo.call(accoutDetails , 3)
+// demo.call(newDetails, 6)
+demo.apply(accoutDetails, [3])
+const output = demo.bind(accoutDetails,[2])
+output()
+// demo(3);
