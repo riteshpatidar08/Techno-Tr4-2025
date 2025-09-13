@@ -200,5 +200,4 @@ const reversedEachWord = strg.split(' ').map((el) => {
 });
 console.log(reversedEachWord.join(' '));
 
-//NOTE INCLUDES 
-
+//NOTE INCLUDES

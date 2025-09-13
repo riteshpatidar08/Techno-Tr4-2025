@@ -1,9 +1,11 @@
 what is prototype in js ?
 prototype chaining ?
 call stack ?
-scope chaining , closures //pending cover tomorrow
+scope chaining , closures //pending cover
 event loop ?
 callback queue ?
+errors types in the js ?
+undefined vs null ?
 microstask queue ?
 promises ?
 promises states ?
@@ -17,15 +19,20 @@ hoisting ?
 this keyword ?
 window object ?
 array methods ?
+array method mutates original array ?
+diffrence between slice and splice ?
 diffrence between forEach and map , find and filter , higher order methods
 callback function
 higher order function
+deep copy vs shallow copy in js
 loops
+reference and primitive types ?
 type conversion coersionn
 ternary operator
 object method => looping object ?
 string methods =>
 truthy and falsy values ?
+Not a number NaN ?
 what is the use of new keyword in the constructor functionn ?
 deep copy and shallow copy ?
 destructuring and spread operator , rest operator ?
@@ -39,4 +46,11 @@ diffrence betweeen htmlcollection and nodelist ?
 what is dom ?
 events in the js ?
 basic form event ?
-diffrence between let , const and var
+diffrence between let , const and var ?
+Search for type ceorsion tricky questions and try to solve ?
+Update way of writing object (object literal)
+call, bind and apply function method
+Es6 version features list ------------------------------
+let , const
+spread operator , destruturing
+promises , async await , es6 classes , default paramters , arrow functions , modules(cover in the starting of the react)

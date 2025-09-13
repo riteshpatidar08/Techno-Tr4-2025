@@ -152,12 +152,18 @@ function outer() {
 
 outer();
 
-//closures ;
-function test(){
-    const b = 100
-   return function(){
-    console.log(b)
-   }
+//NOTE closures ****** ;
+//created when the funtion remembers the variables from the palace where the function is created .
+function test() {
+  const b = 100;
+  return function () {
+    console.log(b);
+  };
 }
-const returnedFn = test()
-returnedFn()
+const returnedFn = test();
+returnedFn();
+
+//parsint and parsefloat ;
+//used to parse interger from an string
+console.log(parseInt('2424kfdsd'));
+console.log(parseFloat('12.44lf')); //parse the floating values
