@@ -106,34 +106,58 @@ console.log(movie.movies);
 
 //NOTE METHOD TYPES INSTANCE AND STATIC ;
 
-class Gadget{
-    constructor(name){
-        this.name = name
-    }
-    static getGadgetDetails(){
-        console.log(
-            'this will call on the Gadget class'
-        )
-    }
+class Gadget {
+  constructor(name) {
+    this.name = name;
+  }
+  static getGadgetDetails() {
+    console.log('this will call on the Gadget class');
+  }
 }
 
-const ps5 = new Gadget('ps5')
+const ps5 = new Gadget('ps5');
 Gadget.getGadgetDetails();
 
 //FUNCTION METHODS CALL APPLY BIND :
 const accoutDetails = {
-    firstName : "TEST"
-}
+  firstName: 'TEST',
+};
 const newDetails = {
-    firstName : "RAM"
-}
-function demo(id){
-    console.log(`this is a demo account for ${this.firstName} with id ${id}`)
+  firstName: 'RAM',
+};
+function demo(id) {
+  console.log(`this is a demo account for ${this.firstName} with id ${id}`);
 }
 //call
-demo.call(accoutDetails , 3)
+demo.call(accoutDetails, 3);
 // demo.call(newDetails, 6)
-demo.apply(accoutDetails, [3])
-const output = demo.bind(accoutDetails,[2])
-output()
+demo.apply(accoutDetails, [3]);
+const output = demo.bind(accoutDetails, [2]);
+output();
 // demo(3);
+
+//scope chaining
+
+function outer() {
+  const a = 5;
+  function inner() {
+    function nestedInner() {
+      console.log(a);
+      const b = 2;
+    }
+    nestedInner();
+  }
+  inner();
+}
+
+outer();
+
+//closures ;
+function test(){
+    const b = 100
+   return function(){
+    console.log(b)
+   }
+}
+const returnedFn = test()
+returnedFn()
