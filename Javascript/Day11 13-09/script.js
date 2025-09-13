@@ -167,3 +167,10 @@ returnedFn();
 //used to parse interger from an string
 console.log(parseInt('2424kfdsd'));
 console.log(parseFloat('12.44lf')); //parse the floating values
+
+
+
+// (IIFE)IMMEDIATELY INVOcKED FUNCTION EXPRESSION
+(function(){
+    console.log('this is iife')
+})() ;
