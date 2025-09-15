@@ -174,3 +174,7 @@ console.log(parseFloat('12.44lf')); //parse the floating values
 (function(){
     console.log('this is iife')
 })() ;
+
+
+
+
